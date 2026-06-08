@@ -1,11 +1,11 @@
 import { BackButton } from '../../components/BackButton'
 import { NavButton } from '../../components/NavButton'
-import { PageTitle } from '../../components/PageTitle'
+import { PageMeta } from '../../components/PageMeta'
 
 export function Games() {
   return (
     <main className="page">
-      <PageTitle title="Games" />
+      <PageMeta title="Games" />
 
       <section className="hero">
         <h1>Select Your Game</h1>

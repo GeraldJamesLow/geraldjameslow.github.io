@@ -1,6 +1,6 @@
 import { BackButton } from '../../../components/BackButton'
 import { NavButton } from '../../../components/NavButton'
-import { PageTitle } from '../../../components/PageTitle'
+import { PageMeta } from '../../../components/PageMeta'
 import {
   countDice,
   rollDice,
@@ -124,7 +124,7 @@ export function LiarsDice() {
 
   return (
     <main className="page">
-      <PageTitle title="Liar's Dice" />
+      <PageMeta title="Liar's Dice" favicon='public/noto-emojis-game-die.svg' />
 
       <section className="hero">
         <div className="hero-content">
