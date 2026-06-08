@@ -124,7 +124,7 @@ export function LiarsDice() {
 
   return (
     <main className="page">
-      <PageMeta title="Liar's Dice" favicon='public/noto-emojis-game-die.svg' />
+      <PageMeta title="Liar's Dice" favicon='/noto-emojis-game-die.svg' />
 
       <section className="hero">
         <div className="hero-content">
