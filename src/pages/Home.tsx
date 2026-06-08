@@ -1,10 +1,10 @@
 import { NavButton } from "../components/NavButton";
-import { PageTitle } from "../components/PageTitle";
+import { PageMeta } from "../components/PageMeta";
 
 export function Home() {
   return (
     <main className="page">
-      <PageTitle title="Gerald Low | Home" />
+      <PageMeta title="Gerald Low | Home" />
 
       <section className="hero">
         <h1>Gerald Low's Portfolio</h1>
