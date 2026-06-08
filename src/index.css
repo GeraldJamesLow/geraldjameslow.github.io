@@ -91,15 +91,81 @@ button:hover {
   padding: 0.65rem 1rem;
   border: 1px solid var(--color-border);
   border-radius: 999px;
-  background: var(--color-surface);
-  color: var(--color-text);
   text-decoration: none;
   line-height: 1;
+  cursor: pointer;
 }
 
-.nav-button:hover {
+.nav-button--default {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.nav-button--default:hover {
   background: var(--color-surface-muted);
   color: var(--color-yellow);
+}
+
+.nav-button--back {
+  background: transparent;
+  color: var(--color-yellow);
+  border-color: var(--color-yellow);
+}
+
+.nav-button--back:hover {
+  background: var(--color-yellow);
+  color: var(--color-bg);
+}
+
+.nav-button--danger {
+  background: transparent;
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
+
+.nav-button--danger:hover {
+  background: var(--color-red);
+  color: var(--color-bg);
+}
+
+.nav-button--muted {
+  background: var(--color-surface-muted);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.nav-button--muted:hover:not(:disabled) {
+  background: var(--color-surface);
+  color: var(--color-yellow);
+}
+
+.nav-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.nav-button--primary {
+  background: transparent;
+  color: var(--color-cyan);
+  border-color: var(--color-cyan);
+}
+
+.nav-button--primary:hover {
+  background: var(--color-cyan);
+  color: var(--color-bg);
+}
+
+.nav-button-group {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.section-divider {
+  width: min(100%, 20rem);
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: 0.5rem 0;
 }
 
 .page {

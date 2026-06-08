@@ -1,0 +1,88 @@
+.dice-count-button {
+  width: 3rem;
+  padding-inline: 0;
+  font-weight: 700;
+}
+
+.dice-count-table {
+  width: min(100%, 26rem);
+  border-collapse: collapse;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 1rem;
+}
+
+.dice-count-table th,
+.dice-count-table td {
+  border: 1px solid var(--color-border);
+  padding: 0.65rem 0.9rem;
+  text-align: center;
+}
+
+.dice-count-table th {
+  background: var(--color-surface-muted);
+  color: var(--color-yellow);
+  font-weight: 700;
+}
+
+.dice-count-table tbody tr:nth-child(odd) {
+  background: var(--color-surface);
+}
+
+.dice-count-table tbody tr:nth-child(even) {
+  background: var(--color-surface-muted);
+}
+
+.dice-count-table tbody tr:hover {
+  background: rgba(156, 209, 187, 0.16);
+}
+
+.dice-controls {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.dice-count-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: 0.75rem;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.dice-stepper {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 4rem);
+  border: 2px solid var(--color-border);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.dice-stepper-button {
+  height: 3rem;
+  border: 0;
+  border-radius: 0;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dice-stepper-button:first-child {
+  border-right: 2px solid var(--color-border);
+}
+
+.dice-stepper-button:hover:not(:disabled) {
+  background: var(--color-surface-muted);
+  color: var(--color-yellow);
+}
+
+.dice-stepper-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
