@@ -83,6 +83,25 @@ button:hover {
   background: var(--color-yellow);
 }
 
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.nav-button:hover {
+  background: var(--color-surface-muted);
+  color: var(--color-yellow);
+}
+
 .page {
   width: min(100% - 2rem, 1100px); /* rem is usually ~16px */
   margin-inline: auto; /* centers content area */
@@ -93,4 +112,10 @@ button:hover {
   place-items: center;
   min-height: 70px;
   text-align: centre;
+}
+
+.hero-content {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
 }
