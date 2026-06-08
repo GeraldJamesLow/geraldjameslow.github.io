@@ -1,15 +1,43 @@
+:root {
+  color-scheme: dark;
+
+  --color-bg: #282a3a;
+  --color-surface: #343746;
+  --color-surface-muted: #3a3d4b;
+
+  --color-text: #eaf2f1;
+  --color-text-muted: #b8c0c0;
+
+  --color-red: #ff657a;
+  --color-green: #bad761;
+  --color-yellow: #ffd76d;
+  --color-orange: #ff9b5e;
+  --color-purple: #c39ac9;
+  --color-cyan: #9cd1bb;
+
+  --color-border: rgba(234, 242, 241, 0.18);
+}
+
 * {
   box-sizing: border-box;/* ensure declared width includes content, padding, and border */
 }
 
 html {
-  font-family: system-ui, sans-serif;
+  font-family: "EB Garamond", system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh; /* Body elements are minimally as tall as viewport (browser height) */
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+#root {
+  min-height: 100vh;
 }
 
 img,
@@ -20,8 +48,19 @@ video {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
+}
+
 a {
-  color: inherit;
+  color: var(--color-cyan);
+}
+
+a:hover {
+  color: var(--color-yellow);
 }
 
 button,
@@ -31,7 +70,27 @@ select {
   font: inherit;
 }
 
+button {
+  color: var(--color-bg);
+  background: var(--color-green);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-yellow);
+}
+
 .page {
   width: min(100% - 2rem, 1100px); /* rem is usually ~16px */
   margin-inline: auto; /* centers content area */
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  min-height: 70px;
+  text-align: centre;
 }
